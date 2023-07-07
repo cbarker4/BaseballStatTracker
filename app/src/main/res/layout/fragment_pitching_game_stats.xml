@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/pitching_item_list_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pitcher_stats_header"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/batting_stat_text_size"
+            android:text="Player Name" />
+
+        <TextView
+
+            android:layout_width="@dimen/pitching_stat_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/batting_stat_text_size"
+            android:text="ERA" />
+
+
+        <TextView
+            android:layout_width="@dimen/pitching_stat_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/batting_stat_text_size"
+            android:text="IP" />
+
+
+        <TextView
+            android:layout_width="@dimen/pitching_stat_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/batting_stat_text_size"
+            android:text="H" />
+
+
+        <TextView
+            android:layout_width="@dimen/pitching_stat_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/batting_stat_text_size"
+            android:text="ER" />
+
+        <TextView
+            android:layout_width="@dimen/pitching_stat_width"
+
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/batting_stat_text_size"
+            android:text="HR" />
+
+        <TextView
+
+            android:layout_width="@dimen/pitching_stat_width"
+
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/batting_stat_text_size"
+            android:text="BB" />
+
+
+        <TextView
+            android:layout_width="@dimen/pitching_stat_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/batting_stat_text_size"
+            android:text="SO" />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pitching_game_stats_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/pitcher_stats_header"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

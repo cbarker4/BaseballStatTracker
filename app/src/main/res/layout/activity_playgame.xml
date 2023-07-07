@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayGameActivity"
+    android:background="@drawable/bbhome">
+
+    <TextView
+        style="@style/StartText"
+        android:id="@+id/away_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/away_score"
+        android:textSize="@dimen/scoreboard_text_size"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/StartText"
+        android:id="@+id/home_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/home_score"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/away_score"
+        android:textSize="@dimen/scoreboard_text_size" />
+
+    <TextView
+        style="@style/StartText"
+        android:id="@+id/pitcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pitcher"
+        app:layout_constraintTop_toBottomOf="@id/home_score"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"/>
+
+    <TextView
+        style="@style/StartText"
+        android:id="@+id/batter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/batter"
+        app:layout_constraintTop_toBottomOf="@id/pitcher"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"/>
+
+    <TextView
+        style="@style/StartText"
+        android:id="@+id/inning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inning_top"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp" />
+
+    <TextView
+        style="@style/StartText"
+        android:id="@+id/outs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/outs"
+        android:textSize="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inning" />
+
+    <TextView
+        style="@style/StartText"
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/count"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outs"
+        android:textSize="20dp" />
+
+
+
+
+    <!--    <GridLayout-->
+<!--        android:id="@+id/stats_layout"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="25dp"-->
+<!--        android:layout_marginTop="72dp"-->
+<!--        android:columnCount="4"-->
+<!--        android:rowCount="6"-->
+<!--        android:useDefaultMargins="true"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/home_score"-->
+<!--        android:foregroundGravity="right">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/stats_header_pitch"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/pitch"-->
+<!--            android:textSize="@dimen/stats_text_size" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/stats_header_strikes"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/strikes"-->
+<!--            android:textSize="@dimen/stats_text_size" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/stats_header_balls"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/balls"-->
+<!--            android:textSize="@dimen/stats_text_size" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/stats_header_total"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/total"-->
+<!--            android:textSize="@dimen/stats_text_size" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/all_index"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/all"-->
+<!--            android:textSize="@dimen/stats_text_size" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/all_strikes"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="@dimen/stats_text_size" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/all_balls"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="@dimen/stats_text_size" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/all_total"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="@dimen/stats_text_size" />-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/four_seam_index"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text="@string/four_seam"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="@dimen/stats_text_size" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/four_seam_strikes"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="@dimen/stats_text_size" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/four_seam_balls"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="@dimen/stats_text_size" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/four_seam_total"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textSize="@dimen/stats_text_size" />&ndash;&gt;-->
+<!--    </GridLayout>-->
+
+    <LinearLayout
+        android:id="@+id/strike_ball_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/home_score"
+        app:layout_constraintBottom_toTopOf="@id/stats_lineup_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/strike_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/strike"
+            android:textSize="@dimen/play_game_button_text_size"/>
+
+        <Button
+            android:id="@+id/ball_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/ball"
+            android:textSize="@dimen/play_game_button_text_size"/>
+
+        <Button
+            android:id="@+id/in_play_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/in_play"
+            android:textSize="@dimen/play_game_button_text_size"/>
+
+        <Button
+            android:id="@+id/run_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/run_scored"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/add_run_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent" >-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/run_for_away_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:text="@string/run_for_away" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/run_for_home_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:text="@string/run_for_home" />-->
+<!--    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/stats_lineup_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <Button
+            android:id="@+id/stats_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="@string/stats" />
+
+        <Button
+            android:id="@+id/lineup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="@string/lineup" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

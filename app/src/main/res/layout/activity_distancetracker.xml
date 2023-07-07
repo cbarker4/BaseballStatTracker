@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BattingActivity"
+    android:layout_gravity="center"
+
+    android:background="@drawable/bbhome">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+
+            android:id="@+id/sethome"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Home Plate"
+            />
+
+        <TextView
+            android:id="@+id/distancetraveled"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/sethome"
+            android:text="@string/set_home_plate"
+            style="@style/StartText"
+            android:textSize="50dp"
+
+            />
+
+
+        <Button
+            android:id="@+id/grabball"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ball_grabbed"
+            />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PracticeMainActivity"
+    android:background="@drawable/bbhome">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/StartText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Baseball Stat\nTracker"
+                android:gravity="center"
+                android:textSize="47dp"
+                />
+
+
+<!--            <Button-->
+<!--                android:id="@+id/Pitching"-->
+<!--                android:theme="@style/StartButtons"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_below="@id/title"-->
+<!--                android:text="@string/pitching"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/Batting"-->
+<!--                android:theme="@style/StartButtons"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_below="@id/Pitching"-->
+<!--                android:text="@string/batting"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/distancetracker"-->
+<!--                android:theme="@style/StartButtons"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_below="@id/Batting"-->
+<!--                android:text="@string/batting_distance"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/settings"-->
+<!--                android:theme="@style/StartButtons"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_below="@id/distancetracker"-->
+<!--                android:text="@string/settings"/>-->
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

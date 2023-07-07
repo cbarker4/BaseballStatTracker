@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Baseball Tracker</string>
+    <string name="play_ball">Play Ball</string>
+    <string name="home_score">Home: %d</string>
+    <string name="away_score">Away: %d</string>
+    <string name="in_play">In Play</string>
+    <string name="ball">Ball</string>
+    <string name="strike">Strike</string>
+    <string name="four_seam">4-Seam</string>
+    <string name="two_seam">2-Seam</string>
+    <string name="slider">Slider</string>
+    <string name="curveball">Curveball</string>
+    <string name="change_up">Change Up</string>
+    <string name="select_pitch">Select Pitch</string>
+    <string name="pitch">Pitch</string>
+    <string name="all">All</string>
+    <string name="strikes">Strikes</string>
+    <string name="balls">Balls</string>
+    <string name="total">Total</string>
+    <string name="run_for_home">Run for Home</string>
+    <string name="run_for_away">Run for Away</string>
+    <string name="run_scored">Run Scored</string>
+    <string name="stats">Stats</string>
+    <string name="lineup">Lineup</string>
+    <string name="inning_top">Inning: Top %d</string>
+    <string name="inning_bottom">Inning: Bottom %d</string>
+    <string name="batter">Batter: %s</string>
+    <string name="pitcher">Pitcher: %s</string>
+    <string name="outs">Outs: %d</string>
+    <string name="count">Count: %d-%d</string>
+    <string-array name="pitch_types">
+        <item>Four-Seam</item>
+        <item>Two-Seam</item>
+        <item>Slider</item>
+        <item>Curveball</item>
+        <item>Change Up</item>
+    </string-array>
+    <string name="title_activity_lineup">LineupActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="select_outcome">Select Result</string>
+    <string name="home">Home</string>
+    <string name="away">Away</string>
+    <string name="add">Add</string>
+    <string name="enter_player_name">Enter player name</string>
+    <string name="pitcher_label">Pitcher:</string>
+    <string name="player_name">Player Name</string>
+    <string name="create_team">Create team</string>
+    <string name="remove_player">remove player</string>
+    <string name="add_player">Add player</string>
+    <string name="pick_up_some_balls">Pick Up Some Balls</string>
+    <string name="set_home_plate">Set Home Plate</string>
+    <string name="batting">Batting</string>
+    <string name="pitching">Pitching</string>
+    <string name="batting_distance">Batting distance</string>
+    <string name="settings">settings</string>
+    <string name="ball_grabbed">Ball grabbed</string>
+    <string name="start">Start</string>
+    <string name="_7">7</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="_0_000">0.000</string>
+    <string name="_0">0</string>
+    <string name="_0_0">0.0</string>
+    <string name="_0_00">0.00</string>
+</resources>

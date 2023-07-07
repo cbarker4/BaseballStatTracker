@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="scoreboard_text_size">30dp</dimen>
+    <dimen name="play_game_button_text_size">40dp</dimen>
+    <dimen name="select_pitch_text_size">40dp</dimen>
+    <dimen name="select_pitch_title_text_size">50dp</dimen>
+    <dimen name="stats_text_size">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="batting_stat_width">40dp</dimen>
+    <dimen name="pitching_stat_width">35dp</dimen>
+    <dimen name="batting_stat_text_size">10dp</dimen>
+    <dimen name="pitcher_stat_width">70dp</dimen>
+    <dimen name="pitcher_stat_text_size">20dp</dimen>
+
+</resources>

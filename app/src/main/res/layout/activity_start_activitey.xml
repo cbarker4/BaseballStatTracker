@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bbhome"
+    >
+
+    <GridLayout
+        android:id="@+id/gridboi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="4"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            style="@style/StartText"
+            android:textSize="35dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="Home:"
+            />
+        <Spinner
+            android:id="@+id/home_team"
+            android:layout_column="1"
+            android:layout_row="1"
+
+            />
+        <TextView
+            style="@style/StartText"
+            android:textSize="35dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="Away:"
+            />
+        <Spinner
+            android:id="@+id/away_team"
+            android:layout_column="1"
+            android:layout_row="2"
+
+
+            />
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/textinning"
+        style="@style/StartText"
+        android:textSize="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/gridboi"
+        android:text="Innings: "
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/innings"
+        style="@style/StartText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        app:layout_constraintLeft_toRightOf="@id/textinning"
+        app:layout_constraintTop_toBottomOf="@id/gridboi"
+        android:text="@string/_7"
+        />
+
+
+    <Button
+        android:id="@+id/startbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/innings"
+        android:text="@string/start"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
